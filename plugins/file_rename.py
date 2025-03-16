@@ -52,8 +52,8 @@ from asyncio import sleep
 import os, time, asyncio
 
 
-UPLOAD_TEXT = """Uploading Started...."""
-DOWNLOAD_TEXT = """Download Started..."""
+UPLOAD_TEXT = """Uᴘʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...."""
+DOWNLOAD_TEXT = """Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...."""
 
 app = Client("4gb_FileRenameBot", api_id=Config.API_ID, api_hash=Config.API_HASH, session_string=Config.STRING_SESSION)
 
@@ -170,7 +170,7 @@ async def doc(bot, update):
         suffix = await digital_botz.get_suffix(user_id)
         new_filename = add_prefix_suffix(new_filename_, prefix, suffix)
     except Exception as e:
-        return await rkn_processing.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact My Creator -> @RknDeveloperr\nError: {e}")
+        return await rkn_processing.edit(f"⚠️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴄᴀɴ'ᴛ ᴀʙʟᴇ ᴛᴏ sᴇᴛ Pʀᴇғɪx ᴏʀ Sᴜғғɪx ☹️ \n\n❄️ Contact My Creator -> @pArAd0X6\nError: {e}")
 
     # msg file location 
     file = update.message.reply_to_message
@@ -337,7 +337,7 @@ async def doc(bot, update):
 # please give credit 🙏🥲
 		    
     await remove_path(ph_path, file_path, dl_path, metadata_path)
-    return await rkn_processing.edit("Uploaded Successfully....")
+    return await rkn_processing.edit("Uᴘʟᴏᴀᴅᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ.....")
     
 #@RknDeveloper
 #✅ Team-RknDeveloper
